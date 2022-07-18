@@ -2,7 +2,7 @@ const categoriesRef = document.querySelectorAll(".item");
 console.log(`Number of categories: ${categoriesRef.length}`);
 
 const titleNameRef = document.querySelectorAll("h2");
-const amountItemRef = document.querySelectorAll("li.item ul");
+const amountItemRef = document.querySelectorAll("li.item > ul");
 
 console.log(`Category: ${titleNameRef[0].textContent}`);
 console.log(`Elements: ${amountItemRef[0].children.length}`);
