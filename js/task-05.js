@@ -3,5 +3,9 @@ const spanOutputRef = document.querySelector("#name-output");
 
 inputRef.addEventListener("input", onInputChange);
 function onInputChange(event) {
-  spanOutputRef.textContent = event.currentTarget.value;
+  if (event.currentTarget.value !== '') {
+spanOutputRef.textContent = event.currentTarget.value;
+  } else {
+    spanOutputRef.textContent = "Anonymous";
+  }   
 }
